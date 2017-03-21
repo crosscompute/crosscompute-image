@@ -11,7 +11,7 @@ DESCRIPTION = '\n\n'.join(open(join(FOLDER, x)).read().strip() for x in [
     'README.rst'])
 setup(
     name='crosscompute-image',
-    version='0.6.7.1',
+    version='0.6.7.2',
     description='Image data type plugin for CrossCompute',
     long_description=DESCRIPTION,
     classifiers=[
@@ -31,6 +31,6 @@ setup(
         'pytest-runner'
     ],
     install_requires=[
-        'crosscompute>=0.6.8',
+        'crosscompute>=0.6.8.2',
     ],
     entry_points=ENTRY_POINTS)

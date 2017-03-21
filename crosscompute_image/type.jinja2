@@ -19,5 +19,5 @@ x.import_url = '{{ request.route_path('image/import_image') }}';
 {% endmacro %}
 
 {% macro render_property(request, data_item, stamp='') %}
-<div class="cc-image"><img src="{{ data_item.render_value() }}"></div>
+<div class="cc-image"><img src="{{ base_url.rstrip('/') + data_item.render_value() }}"></div>
 {% endmacro %}
