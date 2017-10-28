@@ -1,14 +1,2 @@
-+ Review how to do upload in table
-+ Import upload_button macro for jinja
-+ Define render_argument
-+ Check how upload button looks
-+ Define script that listens for uploaded.ir
-+ Define import_url in type.jinja2
-+ Create import_image view
-+ Define DataType.load
-+ Define DataType.save
-+ Add <input name="{{ key }}" type="hidden"> to store upload_id
-+ Accept uploads for image
-
 Create image preview after upload
 Consider displaying preview if image is too big
