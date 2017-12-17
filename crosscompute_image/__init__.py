@@ -1,4 +1,4 @@
-from crosscompute.scripts.serve import get_result_file_url, import_upload_from
+from crosscompute.scripts.serve import get_file_url, import_upload_from
 from crosscompute.types import DataType
 from invisibleroads_macros.disk import link_path
 
@@ -22,7 +22,7 @@ class ImageType(DataType):
 
     @classmethod
     def render(Class, value):
-        return get_result_file_url(value)
+        return get_file_url(value)
 
 
 def import_image(request):
