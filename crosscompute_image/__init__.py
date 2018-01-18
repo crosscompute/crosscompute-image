@@ -12,7 +12,7 @@ class ImageType(DataType):
     ]
 
     @classmethod
-    def load(Class, path):
+    def load(Class, path, default_value=None):
         # Check that we can load the image
         return path
 
