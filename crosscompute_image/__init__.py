@@ -1,6 +1,6 @@
 from crosscompute.scripts.serve import get_file_url, import_upload_from
 from crosscompute.types import DataType
-from invisibleroads_macros.disk import make_hard_link
+from invisibleroads_macros.disk import link_safely
 
 
 class ImageType(DataType):
@@ -18,7 +18,7 @@ class ImageType(DataType):
 
     @classmethod
     def save(Class, path, value):
-        make_hard_link(path, value)
+        link_safely(path, value)
 
     @classmethod
     def render(Class, value):
