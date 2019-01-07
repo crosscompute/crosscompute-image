@@ -31,8 +31,8 @@ setup(
         'pytest-runner',
     ],
     install_requires=[
-        'invisibleroads-macros>=0.9.4.3',
-        'invisibleroads-uploads>0.4.2.2'
-        'crosscompute>=0.7.6',
+        'invisibleroads-macros>=0.9.5',
+        'invisibleroads-uploads>0.4.2.3'
+        'crosscompute>=0.7.7',
     ],
     entry_points=ENTRY_POINTS)
